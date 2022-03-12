@@ -140,7 +140,7 @@ uniq(names, uniqArr => console.log(`The new names array with all the duplicate i
 
 // CODE HERE 
 
-const each = (arr, cb) => arr.foreach((elem, i) => cb(elem, i))
+// const each = (arr, cb) => arr.foreach((elem, i) => cb(elem, i))
 
 /*
   Invoke the each function, passing in the names array and a callback function.
@@ -150,7 +150,7 @@ const each = (arr, cb) => arr.foreach((elem, i) => cb(elem, i))
 */
 
 // CODE HERE
-each(names, (item , index) => `the item at index ${index} is ${item}.`)
+// each(names, (item , index) => `the item at index ${index} is ${item}.`)
 
 ////////// PROBLEM 7 //////////
 
@@ -183,15 +183,21 @@ var users = [
 // Do not edit the code above.
 
 // CODE HERE 
+const getUserById = (arr, id, cb) => {
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i].id === id)
+    return cb(arr[i])
+  }
+}
 
 
 // UNCOMMENT THE FUNCTION CALL BELOW
 // RUN THIS FILE WITH NODE
 // CHECK YOUR ANSWER
 
-// getUserById(users, '16t', user => {
-//   console.log('The user with the id 16t has the email of ' + user.email + ' the name of ' + user.name + ' and the address of ' + user.address) 
-// })
+getUserById(users, '16t', user => {
+  console.log('The user with the id 16t has the email of ' + user.email + ' the name of ' + user.name + ' and the address of ' + user.address) 
+})
 
 ////////// CHALLENGE //////////
 
