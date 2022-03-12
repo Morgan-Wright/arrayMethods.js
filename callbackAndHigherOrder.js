@@ -56,7 +56,7 @@ first(names, firstName => {
   Then invoke the callback, passing in the last element in the array as the argument.
 */
 
-// CODE HERE
+/* CODE HERE
 const last = (arr, cb) => cb(arr[arr.length -1])
 
 // UNCOMMENT THE FUNCTION CALL BELOW
@@ -67,7 +67,7 @@ last(names, lastName => {
   console.log('The last name in names is ' + lastName)
 })
 
-
+*/
 
 ////////// PROBLEM 4 //////////
 
@@ -79,19 +79,19 @@ last(names, lastName => {
 */
 
 // CODE HERE 
-
+const contains = (arr, name, cb) => cb(arr.includes(name))
 
 // UNCOMMENT THE FUNCTION CALL BELOW
 // RUN THIS FILE WITH NODE
 // CHECK YOUR ANSWER
 
-// contains(names, 'Colt', result => {
-//   if(result === true){
-//     console.log('Colt is in the array')
-//   } else {
-//     console.log('Colt is not in the array')
-//   }
-// })
+contains(names, 'Colt', result => {
+  if(result === true){
+    console.log('Colt is in the array')
+  } else {
+    console.log('Colt is not in the array')
+  }
+})
 
 
 
