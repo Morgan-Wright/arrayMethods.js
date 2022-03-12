@@ -91,10 +91,11 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
   Use the filter method to return only the monsters that have a CP of over 200.
 */
 
-// CODE HERE
+/* CODE HERE
+
 const myStrongest = monstersInYourPocket.filter(monster => monster.CP > 200)
 console.log(myStrongest)
-
+*/
 
 ////////// PROBLEM 5 //////////
 
@@ -110,8 +111,11 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
 */
 
 // CODE HERE
+const orderTotal = orderTotal.map(function(total){
+  return total["price"] + (total["price"] * total["tax"])
+})
 
-
+const orderTotal = orderTotal.map(total => total.price + (total.price * total.tax))
 
 ////////// PROBLEM 6 //////////
 
