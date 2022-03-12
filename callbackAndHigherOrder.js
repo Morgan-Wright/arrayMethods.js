@@ -78,7 +78,7 @@ last(names, lastName => {
   If the name does not exist, invoke the callback with false as the argument.
 */
 
-// CODE HERE 
+/* CODE HERE 
 const contains = (arr, name, cb) => cb(arr.includes(name))
 
 // UNCOMMENT THE FUNCTION CALL BELOW
@@ -93,7 +93,7 @@ contains(names, 'Colt', result => {
   }
 })
 
-
+*/
 
 ////////// PROBLEM 5 //////////
 
@@ -104,6 +104,20 @@ contains(names, 'Colt', result => {
 */
 
 // CODE HERE
+var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan']
+
+const uniq = (arr, cb) => {
+    for(let i = 0; i < arr.length; i++){
+        for(let x = i + 1; x < arr.length; x++){
+            if(arr[i] === arr[x]){
+                arr.splice(x, 1)
+                x--
+            }
+        }
+    }
+
+  cb(arr)
+}
 
 /*
   Invoke the uniq function, passing in the names array from above and a callback function.
@@ -113,7 +127,7 @@ contains(names, 'Colt', result => {
 */
 
 // CODE HERE
-
+uniq(names, uniqArr => console.log(`The new names array with all the duplicate items removed is ${uniqArr}`))
 
 
 ////////// PROBLEM 6 //////////
