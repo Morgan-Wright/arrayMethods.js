@@ -35,7 +35,7 @@ var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan']
   Then invoke the callback function, passing in the first element in the array as it's argument.
 */
 
-// CODE HERE 
+/* CODE HERE 
 
 const first = (arr, cb) => cb(arr[0])
 
@@ -47,7 +47,7 @@ first(names, firstName => {
   console.log('The first name in names is ' + firstName)
 })
 
-
+*/
 
 ////////// PROBLEM 3 //////////
 
@@ -57,15 +57,15 @@ first(names, firstName => {
 */
 
 // CODE HERE
-
+const last = (arr, cb) => cb(arr[arr.length -1])
 
 // UNCOMMENT THE FUNCTION CALL BELOW
 // RUN THIS FILE WITH NODE
 // CHECK YOUR ANSWER
 
-// last(names, lastName => {
-//   console.log('The last name in names is ' + lastName)
-// })
+last(names, lastName => {
+  console.log('The last name in names is ' + lastName)
+})
 
 
 
