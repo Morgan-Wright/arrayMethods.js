@@ -62,13 +62,15 @@ const populations = [8175133, 3792621, 2695598, 2100263];
   (runningTotal, curElement, curIndex, wholeArray)=>{} Arrow Form
 */
 
-// CODE HERE
- const totalPopulation = populations.reduce(function (acc, curr){
+/* CODE HERE
+
+const totalPopulation = populations.reduce(function (acc, curr){
    return acc + curr
  })
 
 const totalPopulation = populations.reduce((acc, curr) => acc + curr)
 
+*/
 ////////// PROBLEM 4 //////////
 
 // Do not edit the code below.
@@ -90,8 +92,8 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
 */
 
 // CODE HERE
-// const myStrongest // = monstersInYourPocket.filter(/* Provide Your Callback Here */)
-
+const myStrongest = monstersInYourPocket.filter(monster => monster.CP > 200)
+console.log(myStrongest)
 
 
 ////////// PROBLEM 5 //////////
