@@ -103,7 +103,7 @@ contains(names, 'Colt', result => {
   Hint: you can use a nested for loop to do this.
 */
 
-// CODE HERE
+/* CODE HERE
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan']
 
 const uniq = (arr, cb) => {
@@ -124,11 +124,12 @@ const uniq = (arr, cb) => {
   The callback function should take in one parameter called uniqArr.
   The callback should print a string that says:
   'The new names array with all the duplicate items removed is [UNIQARRPARAM].'
-*/
+
 
 // CODE HERE
 uniq(names, uniqArr => console.log(`The new names array with all the duplicate items removed is ${uniqArr}`))
 
+*/
 
 ////////// PROBLEM 6 //////////
 
@@ -139,6 +140,7 @@ uniq(names, uniqArr => console.log(`The new names array with all the duplicate i
 
 // CODE HERE 
 
+const each = (arr, cb) => arr.foreach((elem, i) => cb(elem, i))
 
 /*
   Invoke the each function, passing in the names array and a callback function.
@@ -148,7 +150,7 @@ uniq(names, uniqArr => console.log(`The new names array with all the duplicate i
 */
 
 // CODE HERE
-
+each(names, (item , index) => `the item at index ${index} is ${item}.`)
 
 ////////// PROBLEM 7 //////////
 
